@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DALELAK</title>
+	<link rel="stylesheet" href="add-quiz.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="top-container">
+			<form class="top-form">
+				<h2>post type:</h2>
+				<br>
+				<input type="radio" name="type" value="male" checked class="quiz">quiz
+				<br>
+				<input type="radio" name="type" value="female" class="assigment">assignment
+				</form>
+		</div>
+		<div class="bottom-container">
+			<form class="bottom-form">
+				<h2>Question 1</h2>
+				<input type="text" class="Question-text" placeholder="Question text" >
+				<div class="quiz-data">
+					<ol>
+						<li><input type="text" class="option-text" placeholder="gg"></li>
+					</ol>
+					<div class="maneg-question-div">
+						<button class="button">+option</button>
+						<div>
+							answer:  <input type ="text" class="answer-button" placeholder="answer" >
+						</div>
+					</div>
+					<div>
+						<button class="button">+ Qustion</button>
+					</div>
+				</div>
+				<hr>
+			</form>
+			<div class="post-div">
+				<button class="button end-button" >create post</button>
+				<button class="button end-button">close</button>
+			</div>	
+		</div>
+	</div>
+	<script>
+	const assigment=document.querySelector(".assigment");
+	const quiz=document.querySelector(".quiz");
+	assigment.addEventListener('change',function() {
+		document.querySelector(".quiz-data").classList.remove("show")
+		document.querySelector(".quiz-data").classList.add("hide")
+	})
+	quiz.addEventListener('change',function() {
+		document.querySelector(".quiz-data").classList.add("show")
+	})
+	</script>
+</body>
+</html>
