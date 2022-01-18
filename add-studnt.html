@@ -10,10 +10,16 @@
 </head>
 <body>
 	<div class="main-container">
-
+		<form class="top-form">
+			<h3>user type:</h3>
+			<br>
+			<input type="radio" name="type" value="teacher" class="teacher">teacher
+			<br>
+			<input type="radio" name="type" value="student" checked  class="student">student
+			</form>
 
     <div class="sup-container">
-		<h1>Add new student</h1>
+		<h4>Add new student</h4>
 		<a>student name</a>
 		<div class="name-container">
 			<form>
@@ -23,25 +29,34 @@
 	</div>
 	<a >Select the class that you want this student to be in</a>
 	<div class="class-container">
+		
+		
+		
+		
 		<form class="grade-Section">
-		<select name="grade" id="grade" class="grad">
-			<option value="1">first grade</option>
-			<option value="2">second grade</option>
-			<option value="3">third grade</option>
-			<option value="4">fourth grade</option>
-			<option value="5">fifth grade</option>
-			<option value="6">sixth grade</option>
-			<option value="7">seventh grade</option>
-			<option value="8">eighth grade</option>
-			<option value="9">ninth grade</option>
-			<option value="10">tenth grade</option>
-		  </select>
-		  <select name="Section" id="Section" class="Section">
-			<option value="1">A</option>
-			<option value="2">B</option>
-			<option value="3">C</option>
-			<option value="4">D</option>
-		  </select>
+			<!-- <select name="Material"  class="material material-style">
+				<option value="1">en</option>
+				<option value="2">sa</option>
+			
+			  </select> -->
+			<select name="grade"  class="grad">
+				<option value="1">first grade</option>
+				<option value="2">second grade</option>
+				<option value="3">third grade</option>
+				<option value="4">fourth grade</option>
+				<option value="5">fifth grade</option>
+				<option value="6">sixth grade</option>
+				<option value="7">seventh grade</option>
+				<option value="8">eighth grade</option>
+				<option value="9">ninth grade</option>
+				<option value="10">tenth grade</option>
+			</select>
+			<select name="Section"  class="Section">
+				<option value="1">A</option>
+				<option value="2">B</option>
+				<option value="3">C</option>
+				<option value="4">D</option>
+			</select>
 		</form>
 	</div>
 	<a>Email address</a>
@@ -61,5 +76,28 @@
 
 </div>
 </div>
+<script>
+	const teacher=document.querySelector(".teacher");
+	const student=document.querySelector(".student");
+	teacher.addEventListener('change',function() {
+		
+	
+		document.querySelector(".Section").classList.remove("show")
+		document.querySelector(".Section").classList.add("hide")
+		// document.querySelector(".material").classList.remove("material")
+		// document.querySelector(".material").classList.add("show")
+	
+	})
+	student.addEventListener('change',function() {
+		console.log("gggggg")
+		
+		document.querySelector(".Section").classList.add("show")
+		
+
+	})
+
+
+
+</script>
 </body>
 </html>

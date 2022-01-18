@@ -5,15 +5,20 @@
 }
 body{
     background-color: #F8F8F8;
+    
+}
+h3{
+    margin-left: 5px;
 }
 .main-container{
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 25px;
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     background-color: white;
-  
+    width: 60%;
+   
 }
 .sup-container{
     margin: 10px;
@@ -28,15 +33,15 @@ body{
     outline: none;
     margin: 10px 0;
     width: 300px;
-    height: 40px;
+    height: 30px;
     border-radius: 5px;
     border: 0.5px solid #b3d3ea ;
 }
 .Section{
     outline: none;
-    margin: 10px 0;
+    margin: 10px 10px;
     width: 50px;
-    height: 40px;
+    height: 30px;
     border-radius: 5px;
     border: 0.5px solid #b3d3ea ;
 }
@@ -44,7 +49,7 @@ body{
     outline: none;
     margin: 8px 0;
     width: 300px;
-    height: 40px;
+    height: 30px;
     border-radius: 5px;
     border: 0.5px solid #b3d3ea ;
 }
@@ -72,9 +77,28 @@ body{
     
 }
 .grade-Section{
-
+   
 }
 .class-container{
 
 }
 
+.hide{
+    display: none;
+
+}
+.show{
+    display: block;
+
+}
+.material{
+    display: none;
+}
+.material-style{
+    outline: none;
+    margin: 10px 0;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0.5px solid #b3d3ea ;
+}
