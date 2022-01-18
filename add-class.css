@@ -13,7 +13,7 @@ body{
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     background-color: white;
-  
+    width: 50%;
 }
 .sup-container{
     margin: 10px;
@@ -48,6 +48,14 @@ body{
     border-radius: 5px;
     border: 0.5px solid #b3d3ea ;
 }
+.min-text-style{
+    outline: none;
+    margin: 8px 0;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid #b3d3ea ;
+}
 .class-container{
 
 }
@@ -77,4 +85,16 @@ body{
 .class-container{
 
 }
+.add-button{
+    border-radius: 50%;
+    background-color: skyblue;
+    border: 0.5px solid #b3d3ea ;
+}
+.add-button:hover{
+   
+    background-color: #b3d3ea; 
+    color: rgb(255, 255, 255); 
+
+}
+
 

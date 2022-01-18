@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DALELAK</title>
-	<link rel="stylesheet" href="add-student.css">
+	<link rel="stylesheet" href="add-class.css">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -13,15 +13,9 @@
 
 
     <div class="sup-container">
-		<h1>Add new student</h1>
-		<a>student name</a>
-		<div class="name-container">
-			<form>
-			<input type="text" name="First-name" placeholder="First name" class="text-style">
-			<input type="text" name="Last-name" placeholder="Last name" class="text-style" >
-			</form>
-	</div>
-	<a >Select the class that you want this student to be in</a>
+		<h1>Add new class</h1>
+		<a>Select class & Section</a>
+		
 	<div class="class-container">
 		<form class="grade-Section">
 		<select name="grade" id="grade" class="grad">
@@ -36,23 +30,30 @@
 			<option value="9">ninth grade</option>
 			<option value="10">tenth grade</option>
 		  </select>
-		  <select name="Section" id="Section" class="Section">
-			<option value="1">A</option>
+		  <input type="text" name="Section" placeholder="Section" class="min-text-style">
+
+		</form>
+	</div>
+	<a>student num</a>
+	<form>
+		<input type="number" name="number-student" placeholder="num" class="min-text-style">
+	</form>
+	<a>set teachers</a>
+	<form class="set teachers">
+		<select name="Material" class="grad">
+			<option value="1">Arabic</option>
 			<option value="2">B</option>
 			<option value="3">C</option>
 			<option value="4">D</option>
 		  </select>
-		</form>
-	</div>
-	<a>Email address</a>
-	<form>
-		<input type="text" name="Email" placeholder="Email" class="text-style">
-	</form>
-	<a>Password</a>
-	<form>
-		<input type="text" name="Password" placeholder="Password" class="text-style"><br>
-		<a>Re-enter password</a><br>
-		<input type="text" name="Re-enter password" placeholder="Re-enter password" class="text-style">
+		  <select name="teacher" class="grad">
+			<option value="1">Ahmad</option>
+			<option value="2">B</option>
+			<option value="3">C</option>
+			<option value="4">D</option>
+		  </select>
+		  <br>
+		  <button class="add-button"><i id="icon" class="material-icons">add</i></button>
 	</form>
 	<div class="button-div">
 		<button class="end-button" >Save</button>

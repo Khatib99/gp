@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: #ececec;
+    
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    
+}
+.l-side{
+  margin: 15px;
+}
+.back-button{
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid white;
+  cursor: pointer;
+}
+.m-side{
+  display: flex;
+  flex-direction: column;
+  width:40%;
+  margin: 10px;
+}
+.nav{
+  background-color:white;
+  width: 100%;
+}
+.nav h3{
+  margin: 5px;
+}
+.sender{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: white;
+  height: 400px;
+}
+.sender-info{
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+  border:1px solid #ececec;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.sender-info:hover{
+  background-color: whitesmoke;
+}
+
+.more-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.more-button:hover{
+  background-color: white;
+}
+.user-img{
+ width: 60px;
+  border-radius: 50%;
+}
+.r-side{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(2, 207, 12);
+  width: 100%;
+  margin: 10px;
+
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 400px;
+}
+.your-message{
+background-color: turquoise;
+width: 100%;
+}
+.input-form{
+  background-color: tomato;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.input-message{
+  width: 100%;
+}
+.send-button{
+
+}
