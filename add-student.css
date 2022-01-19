@@ -91,6 +91,9 @@ h3{
     display: block;
 
 }
+.student-info{
+    display: flex;
+}
 .material{
     display: none;
 }
