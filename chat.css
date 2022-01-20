@@ -15,18 +15,28 @@ body{
 }
 .l-side{
   margin: 15px;
+  
 }
 .back-button{
   border-radius: 50%;
-  background-color: white;
-  border: 5px solid white;
+  background-color: rgb(228, 228, 228);
+  border: 1px solid skyblue;
   cursor: pointer;
 }
+.back-button:hover{
+  border-radius: 50%;
+  background-color: skyblue;
+  color: white;
+  border: 1px solid skyblue;
+  cursor: pointer;
+}
+
 .m-side{
   display: flex;
   flex-direction: column;
   width:40%;
   margin: 10px;
+  border: 1px solid skyblue;
 }
 .nav{
   background-color:white;
@@ -63,6 +73,7 @@ body{
 
 .more-button:hover{
   background-color: white;
+  
 }
 .user-img{
  width: 60px;
@@ -71,31 +82,90 @@ body{
 .r-side{
   display: flex;
   flex-direction: column;
-  background-color: rgb(2, 207, 12);
   width: 100%;
   margin: 10px;
-
+  border: 1px solid skyblue;
 }
 
 .message{
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  height: 400px;
+  height: 370px;
 }
 .your-message{
-background-color: turquoise;
 width: 100%;
 }
 .input-form{
-  background-color: tomato;
   display: flex;
   flex-direction: row;
   justify-content:space-between;
+  margin: 3px;
 }
 .input-message{
   width: 100%;
 }
 .send-button{
+  background: none;
+  border: 1px solid skyblue;
+  cursor: pointer;
 
+}
+.send-button:hover{
+  background-color: skyblue;
+  color: white;
+}
+
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  margin:5px;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+  width: 80%;
+  margin-left: 16%;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
 }
