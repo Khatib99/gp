@@ -5,6 +5,7 @@
 }
 body{
     background-color: #F8F8F8;
+    overflow-y: hidden;
 }
 .main-container{
     display: flex;
@@ -21,8 +22,8 @@ flex-direction: column;
 }
 .play-video{
    width: 800px;
-   margin: 3px;
    margin: 10px;
+   height: 500px;
 }
 .r-side{
 
@@ -31,11 +32,35 @@ flex-direction: column;
 .r-side-comments{
     overflow-y: scroll;
     box-shadow: 0 1px 1px #F8F8F8;
-    height: 400px;
+    height: 400.01px;
 }
 .discussion{
     height: 10px;
 
+}
+.material-icons{
+   background: none;
+}
+.save-button{
+    background: none;
+    border-radius: 5px;
+    width: 50px; 
+    height: 40px; 
+    border: 0.0rem solid #b3d3ea ; 
+    background-color: skyblue; 
+    color: white; 
+    cursor: pointer; 
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+.save-button:hover{
+    background-color: #b3d3ea; 
+    color: black; 
+}
+
+.video-name{
+    display: flex;
+    justify-content: space-between;
 }
 .l-side h3{
     margin: 10px;
