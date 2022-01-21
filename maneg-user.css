@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    background-color: #F8F8F8;
+    justify-content: center;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  background-color: #F8F8F8;
+  margin: 50px;
+}
+.l-side{
+  width: 10%;
+}
+.m-side{
+  width: 45%;
+}
+.r-side{
+  width: 45%;
+}
+
+.r-main-container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+
+}
+.back{
+  margin: 25px;
+}
+.back-button{
+  border-radius: 50%;
+  border: 0.2px solid #b3d3ea ; 
+  background-color: skyblue; 
+  color: white; 
+  cursor: pointer; 
+}
+.back-button:hover{
+  background-color: #b3d3ea; 
+  color: black; 
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+.nav h3{
+  margin-left: 5px;
+}
+.List-user{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 454px;
+}
+
+.user{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2px;
+  border: 2px solid rgb(209, 208, 208);
+  align-items: center;
+  
+}
+
+h3{
+  margin-left: 5px;
+}
+.m-main-container{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background-color: white;
+  width: 90%;
+  height:500px;
+ 
+}
+.sup-container{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.name-container{
+  flex-direction: row;
+}
+.grad{
+  outline: none;
+  margin: 10px 0;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid #b3d3ea ;
+}
+.Section{
+  outline: none;
+  margin: 10px 10px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid #b3d3ea ;
+}
+.text-style{
+  outline: none;
+  margin: 8px 0;
+  width: 40%;
+  height:25px;
+  border-radius: 5px;
+  border: 0.5px solid #b3d3ea ;
+}
+.class-container{
+
+}
+.button-div{
+
+}
+
+.end-button{
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  margin: 3px 0;
+  border: 0.5px solid #b3d3ea ;
+  background-color: skyblue;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.end-button:hover{
+ 
+      background-color: #b3d3ea; 
+      color: rgb(255, 255, 255); 
+  
+}
+.grade-Section{
+ 
+}
+.class-container{
+
+}
+
+.hide{
+  display: none;
+
+}
+.show{
+  display: block;
+
+}
+.student-info{
+  display: flex;
+}
+.material{
+  display: none;
+}
+.material-style{
+  outline: none;
+  margin: 10px 0;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0.5px solid #b3d3ea ;
+}
